@@ -7,7 +7,29 @@ The concept of design patterns in software design was popularized in the Gang of
 
 **Note:** Outside of the Gang of Four's design patterns, there are many other patterns that have been identified.
 
-## Creational Patterns
+## Criticism of patterns
+
+**Workaround for a weak programming language**
+
+The need for patterns often arise when using a programming language that lacks the necessary level of abstraction. Patterns become a workaround that make up for lacking features.
+
+For example, the Strategy pattern can be implemented with a simple anonymous (lambda) function in most modern programming languages.
+
+**Inefficient solutions**
+
+Patterns try to systematize approaches that are already widely used. This unification is viewed by many as a dogma and they implement patterns “to the point”, without adapting them to the context of their project.
+
+**Unjustified use**
+
+If all you have is a hammer, everything looks like a nail. Typically, once a novice first becomes familiar with design patterns they tend to overuse them.
+
+**May Increase Complexity**
+
+Using inappropriate patterns can be like trying to force a square peg into a round hole: adding additional work and unnecessary dependencies.
+
+
+## Patterns
+### Creational Patterns
 
 | Pattern          | Description                                           |
 |------------------|-------------------------------------------------------|
@@ -18,7 +40,7 @@ The concept of design patterns in software design was popularized in the Gang of
 | Singleton        | A class of which only a single instance can exist     |
 
 
-## Structural Patterns
+### Structural Patterns
 
 | Pattern   | Description                                             |
 |-----------|---------------------------------------------------------|
@@ -31,7 +53,7 @@ The concept of design patterns in software design was popularized in the Gang of
 | Proxy     | An object representing another object                   |
 
 
-## Behavioral Patterns
+### Behavioral Patterns
 
 | Pattern         | Description                                           |
 |-----------------|-------------------------------------------------------|
