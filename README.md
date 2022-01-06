@@ -30,6 +30,7 @@ Using inappropriate patterns can be like trying to force a square peg into a rou
 
 ## Patterns
 ### Creational Patterns
+Creational patterns provide object creation mechanisms that increase flexibility and reuse of existing code.
 
 | Pattern          | Description                                           |
 |------------------|-------------------------------------------------------|
@@ -41,6 +42,9 @@ Using inappropriate patterns can be like trying to force a square peg into a rou
 
 
 ### Structural Patterns
+Structural patterns explain how to assemble objects and classes into larger structures, while keeping the structures flexible and efficient.
+
+
 
 | Pattern   | Description                                             |
 |-----------|---------------------------------------------------------|
@@ -54,6 +58,7 @@ Using inappropriate patterns can be like trying to force a square peg into a rou
 
 
 ### Behavioral Patterns
+Behavioral patterns take care of effective communication and the assignment of responsibilities between objects.
 
 | Pattern         | Description                                           |
 |-----------------|-------------------------------------------------------|
@@ -78,7 +83,28 @@ Using inappropriate patterns can be like trying to force a square peg into a rou
 ## Notes
 Some other design patterns to document
 
+
+
+**Object Pool**
+
+Creational Pattern
+
+Uses a set of initialized objects kept ready to use – a "pool" – rather than allocating and destroying them on demand. A client of the pool will request an object from the pool and perform operations on the returned object. When the client has finished, it returns the object to the pool rather than destroying it.
+
+Object pooling can offer a significant performance boost in situations where the cost of initializing a class instance is high and the rate of instantiation and destruction of a class is high – in this case objects can frequently be reused, and each reuse saves a significant amount of time. 
+
+https://en.wikipedia.org/wiki/Object_pool_pattern
+
 **Publisher-Subscriber**
-*Similar to Observer pattern but with 2 key differences:
+
+Behavioral pattern
+
+Similar to Observer pattern but with 2 key differences:
 1. pub/sub is mostly asynchronous whereas observer is mostly synchronous
 2. Observers are aware of the observable whereas publishers and subscribers don't need to know each other. They simply communicate with the help of message queues.
+
+**Null Object**
+
+Behavioral pattern
+
+https://www.c-sharpcorner.com/article/null-object-design-pattern/
